@@ -24,8 +24,8 @@ public class NearestGraterToRight {
 
         int arr[] = {11,13,21,3};
         System.out.println(arr.length);
-//        simpleMethod(arr);
-        stackBasedMethod(arr);
+        simpleMethod(arr);
+//        stackBasedMethod(arr);
     }
 
     static  void stackBasedMethod(int arr[]) {
@@ -47,42 +47,4 @@ public class NearestGraterToRight {
             System.out.println(arr[i] +"----------->"+nge[i]);
         }
     }
-
-//    static  ArrayList<Integer> stackBasedMethod1(int arr[]) {
-//        if(arr == null){
-//            return null;
-//        }
-//        int size = arr.length;
-//        int element, next;
-//        Stack stack = new Stack(size);
-//        ArrayList<Integer> arrayList = new ArrayList<Integer>(); //--vector
-//        stack.push(arr[0]);
-//
-//        for(int i =1 ; i<size ; i++){
-//
-//            element =  arr[i];
-//            if(!stack.isStackEmpty() && stack.top() >  arr[i]){
-//                arrayList.add(stack.top());
-//            }
-//            else if(!stack.isStackEmpty() && stack.top() <  arr[i]){
-//                while (!stack.isStackEmpty() && stack.top() <  arr[i])
-//                {
-//                    stack.pop();
-//                }
-//                if(!stack.isStackEmpty() && stack.top() >  arr[i]){
-//                    arrayList.add(stack.top());
-//                }
-//                else{
-//                    arrayList.add(-1);
-//                }
-//
-//            }
-//        }
-//
-//        for (int i = 0; i < arrayList.size(); i++) {
-//            System.out.println(arrayList.get(i) + " ");
-//        }
-//        return  arrayList;
-//    }
-
 }
